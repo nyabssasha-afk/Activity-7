@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice cream shop</title>
+
+    <style>
+        body {
+            background-color: lightpink;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            color: brown;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: brown;
+            font-size: 18px;
+
+        }
+
+        /* child selector */
+        .menu > div {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* sibling selector */
+        h2 + p {
+            color: deeppink;
+        }
+
+        /* hover effect */
+        .menu > div : :hover {
+            background-color : lavender ;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sweet scoops ice cream</h1>
+
+    <p>Enjoy delicious ice cream in different flavours!</p>
+
+    <div class="menu">
+        <h2>Our flavours</h2>
+        <p>Choose your favorite!</p>
+
+        <div><h3>Vanilla</h3></div>
+        <div><h3>Choclate</h3></div>
+        <div><h3>Strawberry</h3></div>
+        <div><h3>Cookies and cream</h3></div>
+    </div>
+
+</body>
+
+</html>
